@@ -1,0 +1,323 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[colorlinks=false,pdfborder=000]{hyperref}
+\usepackage[top=1.2in, bottom=1.2in, left=1.2in, right=1.2in]{geometry}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{times}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\CSE}{\href{http://www.cse.cuhk.edu.hk}{Department of Computer Science and
+Engineering}}
+\newcommand{\CUHK}{\href{http://www.cuhk.edu.hk}{The Chinese University of Hong Kong}}
+\newcommand{\mymail}{\mbox{\textcolor{blue}{\underline{zgxiao@cse.cuhk.edu.hk}}}}
+\newcommand{\myname}{\href{http://www.cse.cuhk.edu.hk/~zgxiao}{XIAO Zigang}}
+\newcommand{\header}[1]{\noindent {\bf \\#1\\}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% modify the font size of title, author and date
+\pretitle{\begin{center}\bf \LARGE} \posttitle{\par\end{center}}
+\preauthor{\begin{center}
+            \small \lineskip 0.5em%
+            \begin{tabular}[t]{c}}
+\postauthor{\end{tabular}\par\end{center}}
+\predate{\begin{center}\small} \postdate{\par\end{center}}
+
+\title{MPhil -- Seminar Report(08 Fall)}
+\author{\myname\\\mymail\\\CSE\\\CUHK}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\section{Current issues in Max-SAT solving}
+    \begin{tabular}{l l}
+    \hline\\
+    \bf{Date}:     & September 11, 2008 (Thursday)\\
+    \bf{Time}:     & 2:30 p.m. - 3:30 p.m.\\
+    \bf{Venue}:    & Room 121, 1/F, Ho Sin-hang Engineering Building,\\
+                   & The Chinese University of Hong Kong, Shatin, N.T.\\
+    \bf{Speaker}:  & Prof. Javier Larrosa, Associate Professor, \\
+                   & Universitat Politecnica de Catalunya, Barcelona, Spain \\
+    \bf{Organizer}:& Department of Computer Science and Engineering, CUHK \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+
+SAT is the most famous NP-complete problem. Given a boolean
+formula in conjunctive normal form, the goal is to find an
+assignment that satisfies all its clauses. Max-SAT is the
+optimization version of SAT and the goal is to maximize the number
+of satisfied clauses. Many optimization problems arising in
+scheduling, bioinformatics, electronic markets, circuit design and
+many other domains can be naturally modeled as Max-SAT.
+
+In the last 5 years Max-SAT solvers have evolved from the
+implementation of very naive ideas to modern and sophisticated
+pieces of software. The main reason of the breakthrough is the
+development of a true Max-SAT logic. In this talk I will present
+such a logic and review how it is exploited by modern Max-SAT
+solvers.
+
+\header{Comment}
+
+As we all know that SAT and Max-SAT is NP-complete problem which
+computer scientists and mathematicians work for years to find better
+solutions. In this talk, professor Larrosa first introduced SAT
+problem and Max-SAT, and some other useful concepts, such as
+Unsatisfiable Core, Unit Propagation,etc. . The speaker introduced
+three approaches, which are efficient to some different extent. They
+are:
+\begin{itemize}
+    \item{Translate Max-SAT to SAT and solve}
+    \item{Use inference resolution}
+    \item{Use search technique with lower bound and incrementally}
+\end{itemize}
+
+All these methods inspired me a lot during the talk. Although I am
+not so familiar with the topic at first, I grasped some essence of
+the problem as well as modern solve techniques from this talk.
+However, the time is a little bit limited that the speaker failed to
+introduce the future research trend, which I am also very interested
+in.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Iterative Relaxation}
+
+    \begin{tabular}{l l}
+    \hline\\
+    \bf{Date}:     & September 11, 2008 (Thursday)\\
+    \bf{Time}:     & 4:30 p.m. - 5:30 p.m.\\
+    \bf{Venue}:    & Room 833, 1/F, Ho Sin-hang Engineering Building,\\
+                   & The Chinese University of Hong Kong, Shatin, N.T.\\
+    \bf{Speaker}:  & Prof. Lap Chi Lau, Assistant Professor, \\
+                   & Department of Computer Science and Engineering, CUHK \\
+    \bf{Organizer}:& Department of Computer Science and Engineering, CUHK \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+
+In this talk we will demonstrate an iterative relaxation method as a
+framework to analyze linear programming formulations of
+combinatorial optimization problems. This method was first developed
+to tackle degree-bounded network design problems, where it gave
+approximation algorithms with only additive constant errors. In
+particular, it gave an approximation algorithm with error at most 1
+for the minimum bounded degree spanning tree problem, proving a
+conjecture of Goemans. Then we will present the recent developments
+of this method. We show how this method provides new proofs of exact
+linear programming formulations for many classical problems, and see
+how these new proofs lead us to obtain new results in approximation
+algorithms. Finally we will discuss potential future directions of
+this method, and highlight some interesting open problems.  This
+iterative relaxation method is an extension of Jain's iterative
+rounding method.  We will start this talk with Jain's method and the
+necessary background.
+
+Joint work with T. Kiraly, J. Naor, M. Salavatipour, R. Ravi, and M.Singh.
+
+\header{Comment}
+
+Professor Lau introduced iterative relaxation method, which used to
+study LP for combinatorial optimization problems. This method is
+very efficient and it seems that it is a good research topic. The
+last part of the talk is about open problems, which are very
+interesting. Prof. Lau has impressed everyone present with this
+method.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Workshop on Computer Aided Design }
+    \begin{tabular}{l l}
+    \hline\\
+    \bf{Date}:     & October 8, 2008 (Wednesday)\\
+    \bf{Time}:     & 9:00 a.m. - 12:30 p.m.\\
+    \bf{Venue}:    & Council Chamber,the University of Hong Kong\\
+    \bf{Speaker}:  & Prof. C. K. Cheng, U.C. San Diego\\
+                   & Prof. Massoud Pedram, USC \\
+                   & Prof. Tim Cheng, U.C. Santa Barbara \& U. of Tokyo\\
+    \bf{Organizer}:& Department of Electrical and Electronic Engineering, HKU \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+\begin{enumerate}
+  \item \textbf{Breaking the Wall of Interconnect for Digital System Performance}\\
+  As technology scales, interconnects become one of the most critical factors
+  in determining the digital system speed and power consumption.
+  Transmission lines offer the potential to break the wall that blocks the interconnect performance.
+  First, the transmission line can allow the signal to travel at the speed of light in the medium.
+  Second, the signal toggles as wave instead of enforced electronic charges and thus saves power.
+
+  \item \textbf{Re-engineering CMOS VLSI Circuits for Low Power}\\
+  Today¡¯s rising power densities in VLSI circuits constitute the primary challenge to continued CMOS scaling.
+  In my talk, I will first describe state-of-the-art in power-aware design methodologies and tools.
+  Next, I will provide a list of the critical new VLSI design and electronic design automation capabilities
+  which are needed in order to enable high performance design under a power density constraint.
+  Finally I will present a practical lower bound on the energy dissipation per operation in CMOS VLSI circuits
+  and discuss what it tells us about the current state of the technology and design.
+
+  \item \textbf{Design for Reliability and Robustness}\\
+  Future hardware systems must have sufficient robustness to cope with failures resulting
+  from the increasing variability and reliability concerns. This requirement not only applies
+  to high-end systems but also becomes a necessity for consumer electronics.
+  Failures due to design bugs, manufacturing defects and variations,
+  and environmental noise are becoming facts to be dealt with, not just problems to be solved.
+\end{enumerate}
+
+\header{Comment}
+
+Prof. C. K. Cheng present a transmission line approach to improve communication speed with significant power reduction.
+An optimization flow is developed based on eye-diagram prediction and sequential quadratic programming.
+The scalability of the scheme is investigated for technology nodes from 90nm to 22nm.
+
+Prof. Massoud Pedram gave us a well-organized talk about the state of art of power-saving techniques and technologies.
+I learned much from it.
+
+Prof. Tim Cheng reminds us that verification, test,
+and fault tolerance technologies all play critical roles in designing robust and reliably systems.
+Built-in redundancy to tolerate errors or built-in self-recovery from errors will become necessary
+to ensure sufficient system yield and reliability.
+Designing a robust system with spares and self-reconfiguration capability could also alleviate
+the need for burn-in/stress test in the manufacturing line, which has become extremely costly.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Innovation: An MIT CSAIL Perspective}
+    \begin{tabular}{l l}
+    \hline\\
+    \bf{Date}:     & October 31, 2008 (Friday)\\
+    \bf{Time}:     & 4:45 p.m. - 6:15 p.m.\\
+    \bf{Venue}:    & T.Y. Wong Hall, 5/F, Ho Sin Hang Engineering Building,\\
+                   & The Chinese University of Hong Kong, Shatin, N.T.\\
+    \bf{Speaker}:  & Professor Victor ZUE,\\
+                   & Massachusetts Institute of Technology, USA \\
+    \bf{Organizer}:& Department of Computer Science and Engineering, CUHK \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+
+For more than four decades, the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)
+and its predecessors the Artificial Intelligence Laboratory and the Laboratory for Computer Science,
+have contributed many technical innovations, ranging from time-sharing and RSA public key encryption
+to robotics and human-like interfaces. Some of these innovations have spawned successful start-ups
+or have been acquired by multinationals. In this talk, I would like to offer my personal opinion about
+the factors contributing to this innovation-rich research environment. I will illustrate my points with
+examples drawn from past and current research.
+
+\header{Comment}
+
+Professor ZUE made a perfect talk to us. He introduced to us the information of CSAIL,
+presented many interesting application in CSAIL, and shared the experience about innovation with us.
+What impressed me most is his humorous and well-prepared slides. This really attracts lots of audience.
+However, due to time limit, I missed the chance to ask my questions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The Internet is Flat: a Brief History of Networking in the Next Ten Years}
+    \begin{tabular}{l l}
+    \hline\\
+    \bf{Date}:     & November 14, 2008 (Friday) \\
+    \bf{Time}:     & 10:30 a.m.- 11:30 a.m. \\
+    \bf{Venue}:    & Rm.121, Ho Sin Hang Engineering Building,\\
+                   & The Chinese University of Hong Kong, Shatin, N.T.\\
+    \bf{Speaker}:  & Prof. Don Towsley, Department of Computer Science,\\
+                   & University of Massachusetts\\
+    \bf{Organizer}:& Department of Computer Science and Engineering, CUHK \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+
+The current Internet consists of ten to twenty thousand different interconnected autonomous networks.
+In many cases these networks have negotiated cumbersome bilateral and multilateral agreements that
+constrain how data is allowed to flow from source to destination.
+For example, universities can communicate with each other through the Abilene network but
+must rely on other networks to communicate with non-academic entities such as Google.
+These agreements generally impose a loose hierarchy on the Internet with
+respect to the flow of data and information.
+The recent development of peer-to-peer file sharing technology,
+however, has the unintended effect of relaxing and voiding these agreements.
+This has resulted in a "flattening" of the Internet.
+In this talk we review the introduction of peer-to-peer (p2p) technology and
+examine the implications that it may have on the Internet over the next ten years.
+In particular, we examine the effects of p2p on economics for Internet service providers (ISPs),
+and the impact on how they manage and engineer their networks. We focus on one p2p technology,
+``swarming," as exemplified by BitTorrent,
+and examine how it could further flatten the Internet if it were to become the basis of a ``universal swarm" and
+form the basis of a new data transfer architecture over the next ten years.
+Last, we present a research agenda centered on swarm technology to make this happen.
+We will focus in particular on interesting theoretical and algorithmic challenges that will arise with such an architecture.
+
+\header{Comment}
+
+The model Prof. Don Towsley proposed in this talk is very promising.
+I also agree that the Internet will become more and more decentralized.
+However, I think there are still some points we should not neglect:
+\begin{enumerate}
+  \item The bandwidth of the network and the ISP's benefit-driven nature.
+        We have to admit that today's network still cannot bear such a great data flow
+        induced by p2p technology, and ISP's will not be happy in such an Internet model,
+        since they will have to pay much but can not gain more.
+  \item The cheating, security, privacy and legal issues.
+        There are already such issues in p2p network.
+        It becomes very crucial to handle these problems.
+\end{enumerate}
+
+Nevertheless, we have to admit that the world will become flatter and flatter with the technology advances.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The public project problem}
+    \begin{tabular}{l p{.8\linewidth}}
+    \hline\\
+    \bf{Date}:     & November 14, 2008 (Friday) \\
+    \bf{Time}:     & 2:00 p.m. - 3:00 p.m. \\
+    \bf{Venue}:    & Rm.121, 1/F, Ho Sin Hang Engineering Building,\\
+                   & The Chinese University of Hong Kong, Shatin, N.T.\\
+    \bf{Speaker}:  & Professor Krzysztof R. Apt, the Institute for Logic, Language
+                     and Computation University of Amsterdam The Netherlands\\
+    \bf{Organizer}:& Department of Computer Science and Engineering, CUHK \\\\
+    \hline\\
+    \end{tabular}
+
+\header{Abstract}
+
+In the public project problem a decision must be made whether to
+construct a discrete public good (say a bridge) without knowledge
+of the utility functions of the interested players. This is a
+well-known example of a mechanism design problem. The classic
+pivotal mechanism provides a solution but, unavoidably, at the
+cost of taxes players have to pay.  We explain that this solution
+is optimal, ..., well, sometimes.  Additionally, when the players
+are allowed to move sequentially, a better solution turns out to
+be optimal.
+
+The lecture will start with a short introduction to the mechanism
+design, the subject of the most recent Nobel prize in Economics.
+(Based on recent works with V. Conitzer, A. Estevez-Fernandez, V.
+Markakis and M. Guo).
+
+\header{Comment}
+
+Public project problem is an interesting problem,
+which is being studied by Prof. K.R.Apt.
+He first introduced this problem, and previous study of it.
+And then he presented to us his newest research result that his theorem
+is optimal under sequential move. This sounds good.
+However it is under perfect assumption. Circumstance may be:
+\begin{itemize}
+  \item Not every one knows this strategy maximize its utility(\textbf{optimal}).
+  \item There may be cheating in the game, e.g. \textbf{collusion}.
+\end{itemize}
+
+For the second point, no one can answer it now, and Prof. Apt is currently studying in it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
